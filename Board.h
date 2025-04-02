@@ -19,6 +19,8 @@ public:
     vector<Crawler> getCrawlers() const;
     void displayBoard() const;
     void destroy();
+    void loadCrawlersFromFile(const string& fname);
+
 };
 
-#endif
+#endif // BOARD_H
