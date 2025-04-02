@@ -1,0 +1,3 @@
+C:/Users/fanfa/CLionProjects/CA3_CPP_FB/cmake-build-debug/CMakeFiles/CA3_CPP_FB.dir
+C:/Users/fanfa/CLionProjects/CA3_CPP_FB/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/fanfa/CLionProjects/CA3_CPP_FB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
