@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-//#include "Board.h"
-#include "Crawler.h"
 
+#include "Crawler.h"
+#include "Board.h"
 
 Crawler::Crawler(int id, int x, int y, Direction dir, int size) {
     this->id = id;

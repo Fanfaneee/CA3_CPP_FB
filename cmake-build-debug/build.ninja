@@ -61,6 +61,12 @@ build CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj: CXX_COMPILER__CA3_CPP_FB_unscan
   OBJECT_DIR = CMakeFiles\CA3_CPP_FB.dir
   OBJECT_FILE_DIR = CMakeFiles\CA3_CPP_FB.dir
 
+build CMakeFiles/CA3_CPP_FB.dir/Board.cpp.obj: CXX_COMPILER__CA3_CPP_FB_unscanned_Debug C$:/Users/fanfa/CLionProjects/CA3_CPP_FB/Board.cpp || cmake_object_order_depends_target_CA3_CPP_FB
+  DEP_FILE = CMakeFiles\CA3_CPP_FB.dir\Board.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CA3_CPP_FB.dir
+  OBJECT_FILE_DIR = CMakeFiles\CA3_CPP_FB.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CA3_CPP_FB
@@ -69,7 +75,7 @@ build CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj: CXX_COMPILER__CA3_CPP_FB_unscan
 #############################################
 # Link the executable CA3_CPP_FB.exe
 
-build CA3_CPP_FB.exe: CXX_EXECUTABLE_LINKER__CA3_CPP_FB_Debug CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj
+build CA3_CPP_FB.exe: CXX_EXECUTABLE_LINKER__CA3_CPP_FB_Debug CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj CMakeFiles/CA3_CPP_FB.dir/Board.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CA3_CPP_FB.dir
