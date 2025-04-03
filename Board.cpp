@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <iomanip>
+#include <algorithm>
 
 using namespace std;
 
@@ -107,17 +108,50 @@ void Board::displayAllBugs() const {
         cout << setw(10) << bug->size
              << setw(10) << (bug->alive ? "Alive" : "Dead") << endl;
     }
-}/*
-void Board::displayAllBugs() const {
-    cout << "ID\tPosition\tDirection\tSize\tStatus\n";
+}
+
+void Board::findBug(int id) const {
     for (const auto& bug : crawlers) {
-        cout << bug->id << "\t(" << bug->position.x << "," << bug->position.y << ")\t";
-        switch (bug->direction) {
-            case Direction::North: cout << "North"; break;
-            case Direction::East: cout << "East"; break;
-            case Direction::South: cout << "South"; break;
-            case Direction::West: cout << "West"; break;
+        if (bug->id == id) {
+            cout << "Bug ID: " << bug->id
+                 << " Position: (" << bug->position.x << "," << bug->position.y << ")"
+                 << " Direction: ";
+            switch (bug->direction) {
+                case Direction::North: cout << "North"; break;
+                case Direction::East:  cout << "East"; break;
+                case Direction::South: cout << "South"; break;
+                case Direction::West:  cout << "West"; break;
+            }
+            cout << " Size: " << bug->size
+                 << " Status: " << (bug->alive ? "Alive" : "Dead") << endl;
+            return;
         }
-        cout << "\t" << bug->size << "\t" << (bug->alive ? "Alive" : "Dead") << "\n";
     }
-}*/
+    cout << "Bug " << id << " not found." << endl;
+}
+void Board::tapBugBoard() {
+    for (auto& bug : crawlers) {
+        bug->move(width, height);
+    }
+    fight();
+}
+void Board::fight() {
+    for (size_t i = 0; i < crawlers.size(); ++i) {
+        for (size_t j = i + 1; j < crawlers.size(); ++j) {
+            if (crawlers[i]->position.x == crawlers[j]->position.x &&
+                crawlers[i]->position.y == crawlers[j]->position.y) {
+                if (crawlers[i]->size > crawlers[j]->size) {
+                    crawlers[i]->size += crawlers[j]->size;
+                    crawlers[j]->alive = false;
+                } else if (crawlers[i]->size < crawlers[j]->size) {
+                    crawlers[j]->size += crawlers[i]->size;
+                    crawlers[i]->alive = false;
+                }
+                }
+        }
+    }
+    // Supprimer les bugs morts
+    crawlers.erase(remove_if(crawlers.begin(), crawlers.end(),
+                             [](const Crawler* bug) { return !bug->alive; }),
+                   crawlers.end());
+}

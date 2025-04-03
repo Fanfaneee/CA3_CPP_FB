@@ -8,14 +8,17 @@ int main() {
 
 
     Board board(10, 10);
-
     board.loadCrawlersFromFile("../crawler-bug.txt");
+    board.displayAllBugs();
+
+    board.tapBugBoard();
     board.displayAllBugs();
 
     int id;
     cout << "Enter Bug ID: ";
     cin >> id;
     board.findBug(id);
+
     return 0;
 
 }

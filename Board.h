@@ -22,7 +22,8 @@ public:
     void loadCrawlersFromFile(const string& fname);
     void displayAllBugs() const;
     void findBug(int id) const;
-
+    void tapBugBoard();
+    void fight();
 };
 
 #endif // BOARD_H
