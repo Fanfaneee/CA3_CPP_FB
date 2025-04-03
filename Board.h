@@ -21,6 +21,7 @@ public:
     void destroy();
     void loadCrawlersFromFile(const string& fname);
     void displayAllBugs() const;
+    void findBug(int id) const;
 
 };
 

@@ -52,3 +52,23 @@ bool Crawler::isWayBlocked(int boardWidth, int boardHeight) const {
     }
     return false;
 }
+
+void Board::findBug(int id) const {
+    for (const auto& bug : crawlers) {
+        if (bug->id == id) {
+            cout << "Bug ID: " << bug->id
+                 << " Position: (" << bug->position.x << "," << bug->position.y << ")"
+                 << " Direction: ";
+            switch (bug->direction) {
+                case Direction::North: cout << "North"; break;
+                case Direction::East:  cout << "East"; break;
+                case Direction::South: cout << "South"; break;
+                case Direction::West:  cout << "West"; break;
+            }
+            cout << " Size: " << bug->size
+                 << " Status: " << (bug->alive ? "Alive" : "Dead") << endl;
+            return;
+        }
+    }
+    cout << "Bug " << id << " not found." << endl;
+}

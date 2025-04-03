@@ -12,7 +12,10 @@ int main() {
     board.loadCrawlersFromFile("../crawler-bug.txt");
     board.displayAllBugs();
 
-
+    int id;
+    cout << "Enter Bug ID: ";
+    cin >> id;
+    board.findBug(id);
     return 0;
 
 }
