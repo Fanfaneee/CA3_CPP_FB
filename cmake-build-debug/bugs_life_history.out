@@ -1,0 +1,5 @@
+Bug ID: 101 Crawler Path: (0,0),(1,0)
+Bug ID: 102 Crawler Path: (9,0),(8,0)
+Bug ID: 104 Crawler Path: (9,7),(9,8)
+Bug ID: 105 Crawler Path: (0,0),(1,0)
+Bug ID: 103 Crawler Path: (9,9),(9,8) Eaten by 104

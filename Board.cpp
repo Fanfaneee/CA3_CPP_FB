@@ -129,7 +129,7 @@ void Board::findBug(int id) const {
             return;
         }
     }
-    cout << "Bug " << id << " not found." << endl;
+    cout << "Bug " << id << " nott found" << endl;
 }
 
 void Board::tapBugBoard() {
@@ -183,5 +183,36 @@ void Board::displayLifeHistory() const {
             }
         }
         cout << " Eaten by " << bug->eatenBy << endl;
+    }
+}
+
+void Board::writeLifeHistoryToFile() const {
+    string filename = "bugs_life_history.out";
+    ofstream fout(filename);
+
+    if (fout) {
+        for (const auto& bug : crawlers) {
+            fout << "Bug ID: " << bug->id << " Crawler Path: ";
+            for (const auto& pos : bug->path) {
+                fout << "(" << pos.x << "," << pos.y << ")";
+                if (&pos != &bug->path.back()) {
+                    fout << ",";
+                }
+            }
+            fout << endl;
+        }
+        for (const auto& bug : deadCrawlers) {
+            fout << "Bug ID: " << bug->id << " Crawler Path: ";
+            for (const auto& pos : bug->path) {
+                fout << "(" << pos.x << "," << pos.y << ")";
+                if (&pos != &bug->path.back()) {
+                    fout << ",";
+                }
+            }
+            fout << " Eaten by " << bug->eatenBy << endl;
+        }
+        fout.close();
+    } else {
+        cout << "Error openning file for writing." << endl;
     }
 }

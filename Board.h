@@ -26,7 +26,7 @@ public:
     void tapBugBoard();
     void fight();
     void displayLifeHistory() const;
-
+    void writeLifeHistoryToFile() const;
 };
 
 #endif // BOARD_H

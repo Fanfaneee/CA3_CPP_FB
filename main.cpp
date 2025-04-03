@@ -20,7 +20,7 @@ int main() {
     board.findBug(id);
 
     board.displayLifeHistory();
-
+    board.writeLifeHistoryToFile();
     return 0;
 
 }
