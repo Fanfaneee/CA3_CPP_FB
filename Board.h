@@ -20,6 +20,7 @@ public:
     void displayBoard() const;
     void destroy();
     void loadCrawlersFromFile(const string& fname);
+    void displayAllBugs() const;
 
 };
 

@@ -10,8 +10,8 @@ int main() {
     Board board(10, 10);
 
     board.loadCrawlersFromFile("../crawler-bug.txt");
+    board.displayAllBugs();
 
-    board.displayBoard();
 
     return 0;
 

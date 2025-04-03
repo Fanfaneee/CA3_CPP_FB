@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -80,4 +81,43 @@ void Board::loadCrawlersFromFile(const string& fname) {
     } else {
         cout << "Error with oppening of the file." << endl;
     }
+
+
 }
+
+void Board::displayAllBugs() const {
+    cout << left
+         << setw(5)  << "Id"
+         << setw(10) << "Crawler"
+         << setw(10) << "Position"
+         << setw(10) << "Direction"
+         << setw(10) << "Size"
+         << setw(10) << "Status" << endl;
+    for (const auto& bug : crawlers) {
+        cout << left
+             << setw(5)  << bug->id
+             << setw(10) << "Crawler"
+             << setw(10) << (to_string(bug->position.x) + "," + to_string(bug->position.y));
+        switch (bug->direction) {
+            case Direction::North: cout << setw(10) << "North"; break;
+            case Direction::East:  cout << setw(10) << "East"; break;
+            case Direction::South: cout << setw(10) << "South"; break;
+            case Direction::West:  cout << setw(10) << "West"; break;
+        }
+        cout << setw(10) << bug->size
+             << setw(10) << (bug->alive ? "Alive" : "Dead") << endl;
+    }
+}/*
+void Board::displayAllBugs() const {
+    cout << "ID\tPosition\tDirection\tSize\tStatus\n";
+    for (const auto& bug : crawlers) {
+        cout << bug->id << "\t(" << bug->position.x << "," << bug->position.y << ")\t";
+        switch (bug->direction) {
+            case Direction::North: cout << "North"; break;
+            case Direction::East: cout << "East"; break;
+            case Direction::South: cout << "South"; break;
+            case Direction::West: cout << "West"; break;
+        }
+        cout << "\t" << bug->size << "\t" << (bug->alive ? "Alive" : "Dead") << "\n";
+    }
+}*/
