@@ -19,6 +19,8 @@ int main() {
     cin >> id;
     board.findBug(id);
 
+    board.displayLifeHistory();
+
     return 0;
 
 }

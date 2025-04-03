@@ -23,6 +23,7 @@ public:
     Direction direction;
     int size;
     bool alive;
+    int eatenBy;
     std::list<Position> path;
 
 

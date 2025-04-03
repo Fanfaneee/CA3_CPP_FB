@@ -11,6 +11,7 @@ Crawler::Crawler(int id, int x, int y, Direction dir, int size) {
     this->direction = dir;
     this->size = size;
     this->alive = true;
+    this->eatenBy = -1;
 
     path.push_back(position);
 }

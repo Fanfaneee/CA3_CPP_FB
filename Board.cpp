@@ -4,6 +4,7 @@
 #include <sstream>
 #include <iomanip>
 #include <algorithm>
+#include <vector>
 
 using namespace std;
 
@@ -39,7 +40,11 @@ void Board::destroy() {
     for (auto bug : crawlers) {
         delete bug;
     }
+    for (auto bug : deadCrawlers) {
+        delete bug;
+    }
     crawlers.clear();
+    deadCrawlers.clear();
 }
 
 struct CrawlerData {
@@ -50,12 +55,11 @@ struct CrawlerData {
     int size;
 };
 
-
 void parseLine(const string& line, CrawlerData &data) {
     string temp;
     stringstream ss(line);
 
-    getline(ss, temp, ','); // Ignore le 'C'
+    getline(ss, temp, ',');
     getline(ss, temp, ',');
     data.id = stoi(temp);
     getline(ss, temp, ',');
@@ -82,8 +86,6 @@ void Board::loadCrawlersFromFile(const string& fname) {
     } else {
         cout << "Error with oppening of the file." << endl;
     }
-
-
 }
 
 void Board::displayAllBugs() const {
@@ -129,12 +131,14 @@ void Board::findBug(int id) const {
     }
     cout << "Bug " << id << " not found." << endl;
 }
+
 void Board::tapBugBoard() {
     for (auto& bug : crawlers) {
         bug->move(width, height);
     }
     fight();
 }
+
 void Board::fight() {
     for (size_t i = 0; i < crawlers.size(); ++i) {
         for (size_t j = i + 1; j < crawlers.size(); ++j) {
@@ -143,15 +147,41 @@ void Board::fight() {
                 if (crawlers[i]->size > crawlers[j]->size) {
                     crawlers[i]->size += crawlers[j]->size;
                     crawlers[j]->alive = false;
+                    crawlers[j]->eatenBy = crawlers[i]->id;
+                    deadCrawlers.push_back(crawlers[j]);
                 } else if (crawlers[i]->size < crawlers[j]->size) {
                     crawlers[j]->size += crawlers[i]->size;
                     crawlers[i]->alive = false;
+                    crawlers[i]->eatenBy = crawlers[j]->id;
+                    deadCrawlers.push_back(crawlers[i]);
                 }
-                }
+            }
         }
     }
-    // Supprimer les bugs morts
     crawlers.erase(remove_if(crawlers.begin(), crawlers.end(),
                              [](const Crawler* bug) { return !bug->alive; }),
                    crawlers.end());
+}
+
+void Board::displayLifeHistory() const {
+    for (const auto& bug : crawlers) {
+        cout << "Bug ID: " << bug->id << " Crawler Path: ";
+        for (const auto& pos : bug->path) {
+            cout << "(" << pos.x << "," << pos.y << ")";
+            if (&pos != &bug->path.back()) {
+                cout << ",";
+            }
+        }
+        cout << endl;
+    }
+    for (const auto& bug : deadCrawlers) {
+        cout << "Bug ID: " << bug->id << " Crawler Path: ";
+        for (const auto& pos : bug->path) {
+            cout << "(" << pos.x << "," << pos.y << ")";
+            if (&pos != &bug->path.back()) {
+                cout << ",";
+            }
+        }
+        cout << " Eaten by " << bug->eatenBy << endl;
+    }
 }

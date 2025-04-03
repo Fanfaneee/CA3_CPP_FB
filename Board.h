@@ -10,6 +10,7 @@ private:
     int width;
     int height;
     vector<Crawler*> crawlers;
+    vector<Crawler*> deadCrawlers;
 
 public:
     Board(int w, int h);
@@ -24,6 +25,8 @@ public:
     void findBug(int id) const;
     void tapBugBoard();
     void fight();
+    void displayLifeHistory() const;
+
 };
 
 #endif // BOARD_H
