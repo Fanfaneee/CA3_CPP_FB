@@ -6,6 +6,8 @@
 #include <algorithm>
 #include <vector>
 #include <random>
+#include <thread>
+#include <chrono>
 
 
 using namespace std;
@@ -35,7 +37,7 @@ vector<Crawler> Board::getCrawlers() const {
 void Board::displayBoard() const {
     cout << "Bugs on the board:\n";
     for (const auto& bug : crawlers) {
-        cout << "Bug ID: " << bug->id
+        cout << "Bug :" << bug->id
                   << " at (" << bug->position.x << ", " << bug->position.y << ")\n";
     }
 }
@@ -272,4 +274,14 @@ bool Board::checkLastBugStanding() const {
         }
     }
     return aliveCount == 1;
+}
+
+void Board::simulateGame() {
+    while (!tapBugBoard()) {
+        displayBoard();
+        this_thread::sleep_for(chrono::milliseconds(100));
+    }
+    displayBoard();
+    writeLifeHistoryToFile();
+    cout << "Simulation finished. The results are written in the file." << endl;
 }

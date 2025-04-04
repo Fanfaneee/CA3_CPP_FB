@@ -33,6 +33,7 @@ public:
     void writeLifeHistoryToFile() const;
     void displayAllCells() const;
     bool checkLastBugStanding() const;
+    void simulateGame();
 
 };
 
