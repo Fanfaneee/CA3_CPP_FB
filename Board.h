@@ -2,6 +2,7 @@
 #define BOARD_H
 
 #include <vector>
+#include <map>
 #include "Crawler.h"
 using namespace std;
 
@@ -11,6 +12,9 @@ private:
     int height;
     vector<Crawler*> crawlers;
     vector<Crawler*> deadCrawlers;
+    map<Position, vector<Crawler*>> cellOccupants;
+
+    void majCellOccupants();
 
 public:
     Board(int w, int h);
@@ -27,6 +31,8 @@ public:
     void fight();
     void displayLifeHistory() const;
     void writeLifeHistoryToFile() const;
+    void displayAllCells() const;
+
 };
 
 #endif // BOARD_H

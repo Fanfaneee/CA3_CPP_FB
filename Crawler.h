@@ -7,8 +7,14 @@
 struct Position {
     int x;
     int y;
-};
 
+    bool operator<(const Position& other) const {
+        if (x == other.x) {
+            return y < other.y;
+        }
+        return x < other.x;
+    }
+};
 enum class Direction {
     North = 1,
     East = 2,

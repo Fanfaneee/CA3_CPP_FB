@@ -12,12 +12,14 @@ Board::Board(int w, int h) : width(w), height(h) {}
 
 void Board::addCrawler(int id, int x, int y, Direction dir, int size) {
     crawlers.push_back(new Crawler(id, x, y, dir, size));
+    majCellOccupants();
 }
 
 void Board::moveCrawlers() {
     for (auto& bug : crawlers) {
         bug->move(width, height);
     }
+    majCellOccupants();
 }
 
 vector<Crawler> Board::getCrawlers() const {
@@ -137,8 +139,8 @@ void Board::tapBugBoard() {
         bug->move(width, height);
     }
     fight();
+    majCellOccupants();
 }
-
 void Board::fight() {
     for (size_t i = 0; i < crawlers.size(); ++i) {
         for (size_t j = i + 1; j < crawlers.size(); ++j) {
@@ -214,5 +216,30 @@ void Board::writeLifeHistoryToFile() const {
         fout.close();
     } else {
         cout << "Error openning file for writing." << endl;
+    }
+}
+
+void Board::majCellOccupants() {
+    cellOccupants.clear();
+    for (auto& bug : crawlers) {
+        cellOccupants[bug->position].push_back(bug);
+    }
+}
+
+void Board::displayAllCells() const {
+    for (int y = 0; y < height; ++y) {
+        for (int x = 0; x < width; ++x) {
+            Position pos = {x, y};
+            cout << "(" << x << "," << y << "): ";
+            if (cellOccupants.find(pos) != cellOccupants.end()) {
+                for (const auto& bug : cellOccupants.at(pos)) {
+                    cout << "Crawler " << bug->id << ", ";
+                }
+                cout << "\b\b  ";
+            } else {
+                cout << "empty";
+            }
+            cout << endl;
+        }
     }
 }

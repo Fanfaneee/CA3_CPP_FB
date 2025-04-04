@@ -21,6 +21,8 @@ int main() {
 
     board.displayLifeHistory();
     board.writeLifeHistoryToFile();
+
+    board.displayAllCells();
     return 0;
 
 }
