@@ -27,11 +27,12 @@ public:
     void loadCrawlersFromFile(const string& fname);
     void displayAllBugs() const;
     void findBug(int id) const;
-    void tapBugBoard();
+    bool tapBugBoard();
     void fight();
     void displayLifeHistory() const;
     void writeLifeHistoryToFile() const;
     void displayAllCells() const;
+    bool checkLastBugStanding() const;
 
 };
 

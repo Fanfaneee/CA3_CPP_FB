@@ -136,12 +136,14 @@ void Board::findBug(int id) const {
     cout << "Bug " << id << " nott found" << endl;
 }
 
-void Board::tapBugBoard() {
+bool Board::tapBugBoard() {
     for (auto& bug : crawlers) {
         bug->move(width, height);
     }
     fight();
     majCellOccupants();
+
+    return checkLastBugStanding();
 }
 void Board::fight() {
     random_device rd;
@@ -260,4 +262,14 @@ void Board::displayAllCells() const {
             cout << endl;
         }
     }
+}
+
+bool Board::checkLastBugStanding() const {
+    int aliveCount = 0;
+    for (const auto& bug : crawlers) {
+        if (bug->alive) {
+            aliveCount++;
+        }
+    }
+    return aliveCount == 1;
 }
