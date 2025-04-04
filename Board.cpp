@@ -5,6 +5,8 @@
 #include <iomanip>
 #include <algorithm>
 #include <vector>
+#include <random>
+
 
 using namespace std;
 
@@ -142,6 +144,9 @@ void Board::tapBugBoard() {
     majCellOccupants();
 }
 void Board::fight() {
+    random_device rd;
+    mt19937 gen(rd());
+
     for (size_t i = 0; i < crawlers.size(); ++i) {
         for (size_t j = i + 1; j < crawlers.size(); ++j) {
             if (crawlers[i]->position.x == crawlers[j]->position.x &&
@@ -156,8 +161,21 @@ void Board::fight() {
                     crawlers[i]->alive = false;
                     crawlers[i]->eatenBy = crawlers[j]->id;
                     deadCrawlers.push_back(crawlers[i]);
+                } else {
+                    uniform_int_distribution<> dis(0, 1);
+                    if (dis(gen) == 0) {
+                        crawlers[i]->size += crawlers[j]->size;
+                        crawlers[j]->alive = false;
+                        crawlers[j]->eatenBy = crawlers[i]->id;
+                        deadCrawlers.push_back(crawlers[j]);
+                    } else {
+                        crawlers[j]->size += crawlers[i]->size;
+                        crawlers[i]->alive = false;
+                        crawlers[i]->eatenBy = crawlers[j]->id;
+                        deadCrawlers.push_back(crawlers[i]);
+                    }
                 }
-            }
+                }
         }
     }
     crawlers.erase(remove_if(crawlers.begin(), crawlers.end(),
