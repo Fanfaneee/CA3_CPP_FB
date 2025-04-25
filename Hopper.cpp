@@ -38,3 +38,7 @@ void Hopper::move(int boardWidth, int boardHeight) {
     position = {newX, newY};
     path.push_back(position);
 }
+
+int Hopper::getHopLength() const {
+    return hopLength;
+}

@@ -10,6 +10,7 @@ private:
 public:
     Hopper(int id, int x, int y, Direction dir, int size, int hopLength);
     void move(int boardWidth, int boardHeight) override;
+    int getHopLength() const;
 };
 
 #endif // HOPPER_H

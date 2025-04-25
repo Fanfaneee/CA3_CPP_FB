@@ -86,17 +86,24 @@ void Board::displayAllBugs() const {
          << setw(5) << "Id"
          << setw(10) << "Type"
          << setw(10) << "Position"
-         << setw(10) << "Direction"
          << setw(10) << "Size"
+         << setw(10) << "Direction"
+         << setw(10) << "HopLength"
          << setw(10) << "Status" << endl;
 
     for (const auto& bug : bugs) {
+        string type = dynamic_cast<Hopper*>(bug) ? "Hopper" : "Crawler";
+        int hopLength = dynamic_cast<Hopper*>(bug) ? dynamic_cast<Hopper*>(bug)->getHopLength() : 0;
+
         cout << left
              << setw(5) << bug->getId()
-             << setw(10) << "Bug"
+             << setw(10) << type
              << setw(10) << "(" + to_string(bug->getPosition().x) + "," + to_string(bug->getPosition().y) + ")"
-             << setw(10) << static_cast<int>(bug->getDirection())
              << setw(10) << bug->getSize()
+             << setw(10) << (bug->getDirection() == Direction::North ? "North" :
+                             bug->getDirection() == Direction::East ? "East" :
+                             bug->getDirection() == Direction::South ? "South" : "West")
+             << setw(10) << (type == "Hopper" ? to_string(hopLength) : "-")
              << setw(10) << (bug->isAlive() ? "Alive" : "Dead") << endl;
     }
 }
