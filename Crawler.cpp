@@ -1,24 +1,11 @@
-#include <iostream>
-using namespace std;
-
-
 #include "Crawler.h"
-#include "Board.h"
+#include <cstdlib>
 
-Crawler::Crawler(int id, int x, int y, Direction dir, int size) {
-    this->id = id;
-    this->position = {x, y};
-    this->direction = dir;
-    this->size = size;
-    this->alive = true;
-    this->eatenBy = -1;
-
-    path.push_back(position);
-}
+Crawler::Crawler(int id, int x, int y, Direction dir, int size)
+    : Bug(id, x, y, dir, size) {}
 
 void Crawler::move(int boardWidth, int boardHeight) {
     if (!alive) return;
-
 
     if (isWayBlocked(boardWidth, boardHeight)) {
         do {
@@ -42,14 +29,4 @@ void Crawler::move(int boardWidth, int boardHeight) {
     }
 
     path.push_back(position);
-}
-
-bool Crawler::isWayBlocked(int boardWidth, int boardHeight) const {
-    switch (direction) {
-        case Direction::North: return (position.y == 0);
-        case Direction::East:  return (position.x == boardWidth - 1);
-        case Direction::South: return (position.y == boardHeight - 1);
-        case Direction::West:  return (position.x == 0);
-    }
-    return false;
 }

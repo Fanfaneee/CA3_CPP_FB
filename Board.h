@@ -3,28 +3,27 @@
 
 #include <vector>
 #include <map>
+#include "Bug.h"
 #include "Crawler.h"
-using namespace std;
+#include "Hopper.h"
 
 class Board {
 private:
     int width;
     int height;
-    vector<Crawler*> crawlers;
-    vector<Crawler*> deadCrawlers;
-    map<Position, vector<Crawler*>> cellOccupants;
+    std::vector<Bug*> bugs; // Tous les bugs vivants
+    std::vector<Bug*> deadBugs; // Bugs morts
+    std::map<Position, std::vector<Bug*>> cellOccupants;
 
-    void majCellOccupants();
+    void updateCellOccupants();
 
 public:
     Board(int w, int h);
+    ~Board();
 
-    void addCrawler(int id, int x, int y, Direction dir, int size);
-    void moveCrawlers();
-    vector<Crawler> getCrawlers() const;
-    void displayBoard() const;
-    void destroy();
-    void loadCrawlersFromFile(const string& fname);
+    void addBug(Bug* bug);
+    void loadCrawlersFromFile(const std::string& filename);
+    void moveBugs();
     void displayAllBugs() const;
     void findBug(int id) const;
     bool tapBugBoard();
@@ -34,7 +33,6 @@ public:
     void displayAllCells() const;
     bool checkLastBugStanding() const;
     void simulateGame();
-
 };
 
 #endif // BOARD_H

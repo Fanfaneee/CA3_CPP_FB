@@ -7,5 +7,9 @@ add_executable(CA3_CPP_FB main.cpp
         Crawler.cpp
         Crawler.h
         Board.cpp
-        Board.h)
+        Board.h
+        Bug.cpp
+        Bug.h
+        Hopper.cpp
+        Hopper.h)
 
