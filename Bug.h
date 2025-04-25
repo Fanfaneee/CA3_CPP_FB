@@ -46,7 +46,7 @@ public:
     void markAsDead();
     bool isWayBlocked(int boardWidth, int boardHeight) const;
 
-    virtual void move(int boardWidth, int boardHeight) = 0; // Méthode virtuelle pure
+    virtual void move(int boardWidth, int boardHeight) = 0;
 };
 
 #endif // BUG_H
