@@ -897,8 +897,10 @@ CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_F
   C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Jumper.h
 
 CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/main.cpp \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
@@ -908,6 +910,7 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
@@ -926,8 +929,11 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/max_size_type.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
@@ -942,16 +948,20 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algo.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_cmp.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_util.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
@@ -959,13 +969,16 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -978,6 +991,7 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
@@ -994,11 +1008,15 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numbers \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
@@ -1020,10 +1038,13 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -1054,6 +1075,7 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/signal.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
@@ -1063,6 +1085,82 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/SFML-2.6.2/include/SFML/Config.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/BlendMode.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/CircleShape.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Color.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/ConvexShape.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Drawable.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Export.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Font.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Glsl.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Glsl.inl \
+  C:/SFML-2.6.2/include/SFML/Graphics/Glyph.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Image.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/PrimitiveType.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Rect.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Rect.inl \
+  C:/SFML-2.6.2/include/SFML/Graphics/RectangleShape.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/RenderStates.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/RenderTarget.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/RenderTexture.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/RenderWindow.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Shader.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Shape.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Sprite.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Text.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Texture.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Transform.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Transformable.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/Vertex.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/VertexArray.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/VertexBuffer.hpp \
+  C:/SFML-2.6.2/include/SFML/Graphics/View.hpp \
+  C:/SFML-2.6.2/include/SFML/System.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Clock.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Err.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Export.hpp \
+  C:/SFML-2.6.2/include/SFML/System/FileInputStream.hpp \
+  C:/SFML-2.6.2/include/SFML/System/InputStream.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Lock.hpp \
+  C:/SFML-2.6.2/include/SFML/System/MemoryInputStream.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Mutex.hpp \
+  C:/SFML-2.6.2/include/SFML/System/NonCopyable.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Sleep.hpp \
+  C:/SFML-2.6.2/include/SFML/System/String.hpp \
+  C:/SFML-2.6.2/include/SFML/System/String.inl \
+  C:/SFML-2.6.2/include/SFML/System/Thread.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Thread.inl \
+  C:/SFML-2.6.2/include/SFML/System/ThreadLocal.hpp \
+  C:/SFML-2.6.2/include/SFML/System/ThreadLocalPtr.hpp \
+  C:/SFML-2.6.2/include/SFML/System/ThreadLocalPtr.inl \
+  C:/SFML-2.6.2/include/SFML/System/Time.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Utf.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Utf.inl \
+  C:/SFML-2.6.2/include/SFML/System/Vector2.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Vector2.inl \
+  C:/SFML-2.6.2/include/SFML/System/Vector3.hpp \
+  C:/SFML-2.6.2/include/SFML/System/Vector3.inl \
+  C:/SFML-2.6.2/include/SFML/Window.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Clipboard.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Context.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/ContextSettings.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Cursor.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Event.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Export.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/GlResource.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Joystick.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Keyboard.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Mouse.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Sensor.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Touch.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/VideoMode.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Vulkan.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/Window.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/WindowBase.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/WindowHandle.hpp \
+  C:/SFML-2.6.2/include/SFML/Window/WindowStyle.hpp \
   C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Board.h \
   C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Bug.h \
   C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Crawler.h \
@@ -1082,9 +1180,13 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm:
 
+C:/SFML-2.6.2/include/SFML/Window/Window.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h:
+
+C:/SFML-2.6.2/include/SFML/System/Utf.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h:
 
@@ -1093,6 +1195,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bit:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h:
+
+C:/SFML-2.6.2/include/SFML/Window/VideoMode.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h:
 
@@ -1105,6 +1209,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Transformable.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/align.h:
 
@@ -1136,6 +1242,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h:
 
+C:/SFML-2.6.2/include/SFML/Graphics/Glsl.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_wait.h:
@@ -1159,6 +1267,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h:
+
+C:/SFML-2.6.2/include/SFML/Window/Sensor.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h:
 
@@ -1206,6 +1316,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h:
 
+C:/SFML-2.6.2/include/SFML/System/Clock.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc:
@@ -1224,6 +1336,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc:
 
+C:/SFML-2.6.2/include/SFML/Window/GlResource.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stop_token:
@@ -1235,6 +1349,10 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/max_size_type.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Vertex.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Transform.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream:
 
@@ -1253,6 +1371,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algo.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h:
+
+C:/SFML-2.6.2/include/SFML/System/Mutex.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_base.h:
 
@@ -1274,9 +1394,13 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h:
 
+C:/SFML-2.6.2/include/SFML/Graphics/PrimitiveType.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h:
+
+C:/SFML-2.6.2/include/SFML/System/Thread.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc:
 
@@ -1293,6 +1417,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h:
+
+C:/SFML-2.6.2/include/SFML/System/ThreadLocalPtr.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric:
 
@@ -1322,6 +1448,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h:
 
+C:/SFML-2.6.2/include/SFML/Graphics/Glyph.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h:
@@ -1336,7 +1464,11 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:
 
+C:/SFML-2.6.2/include/SFML/Window/Keyboard.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Drawable.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
 
@@ -1358,7 +1490,11 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h:
 
+C:/SFML-2.6.2/include/SFML/System/Export.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc:
+
+C:/SFML-2.6.2/include/SFML/System/NonCopyable.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype:
 
@@ -1418,6 +1554,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip:
 
+C:/SFML-2.6.2/include/SFML/Graphics/View.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits:
@@ -1442,6 +1580,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:
 
+C:/SFML-2.6.2/include/SFML/System/Utf.inl:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/locale.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h:
@@ -1458,6 +1598,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h:
 
+C:/SFML-2.6.2/include/SFML/System/String.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string:
@@ -1470,19 +1612,27 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/exp_integral.tcc:
 
+C:/SFML-2.6.2/include/SFML/Graphics/CircleShape.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/gamma.tcc:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/hypergeometric.tcc:
 
+C:/SFML-2.6.2/include/SFML/Graphics/Font.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/modified_bessel_func.tcc:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc:
 
+C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc:
+
+C:/SFML-2.6.2/include/SFML/Window/ContextSettings.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/special_function_util.h:
 
@@ -1501,6 +1651,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
+
+C:/SFML-2.6.2/include/SFML/Graphics/RenderStates.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
 
@@ -1534,6 +1686,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/_mingw.h:
 
+C:/SFML-2.6.2/include/SFML/Graphics/Text.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/_timeval.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h:
@@ -1556,6 +1710,8 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h:
 
+C:/SFML-2.6.2/include/SFML/System/Vector3.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
@@ -1570,11 +1726,19 @@ C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/stdlib.h:
 
+C:/SFML-2.6.2/include/SFML/System/Vector2.hpp:
+
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h:
+
+C:/SFML-2.6.2/include/SFML/Window/Joystick.hpp:
+
+C:/SFML-2.6.2/include/SFML/System/Sleep.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/sys/types.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/time.h:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Rect.hpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/x86_64-w64-mingw32/include/wctype.h:
 
@@ -1592,8 +1756,98 @@ C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Bug.cpp:
 
 C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Crawler.cpp:
 
+C:/SFML-2.6.2/include/SFML/System/String.inl:
+
 C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Hopper.cpp:
 
 C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Jumper.cpp:
 
 C:/Users/fanfa/CLionProjects/CA3_CPP_FB/main.cpp:
+
+C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator:
+
+C:/SFML-2.6.2/include/SFML/Config.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/BlendMode.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/Clipboard.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Color.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/ConvexShape.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Export.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/RenderTarget.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Glsl.inl:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Image.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Rect.inl:
+
+C:/SFML-2.6.2/include/SFML/Graphics/RectangleShape.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/WindowHandle.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/RenderTexture.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/Mouse.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/RenderWindow.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Shader.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Shape.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Sprite.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/Texture.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/VertexArray.hpp:
+
+C:/SFML-2.6.2/include/SFML/Graphics/VertexBuffer.hpp:
+
+C:/SFML-2.6.2/include/SFML/System.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/Export.hpp:
+
+C:/SFML-2.6.2/include/SFML/System/Err.hpp:
+
+C:/SFML-2.6.2/include/SFML/System/FileInputStream.hpp:
+
+C:/SFML-2.6.2/include/SFML/System/InputStream.hpp:
+
+C:/SFML-2.6.2/include/SFML/System/Lock.hpp:
+
+C:/SFML-2.6.2/include/SFML/System/MemoryInputStream.hpp:
+
+C:/SFML-2.6.2/include/SFML/System/Thread.inl:
+
+C:/SFML-2.6.2/include/SFML/System/ThreadLocal.hpp:
+
+C:/SFML-2.6.2/include/SFML/System/ThreadLocalPtr.inl:
+
+C:/SFML-2.6.2/include/SFML/System/Time.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/Touch.hpp:
+
+C:/SFML-2.6.2/include/SFML/System/Vector2.inl:
+
+C:/SFML-2.6.2/include/SFML/System/Vector3.inl:
+
+C:/SFML-2.6.2/include/SFML/Window.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/Context.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/Cursor.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/Event.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/Vulkan.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/WindowBase.hpp:
+
+C:/SFML-2.6.2/include/SFML/Window/WindowStyle.hpp:

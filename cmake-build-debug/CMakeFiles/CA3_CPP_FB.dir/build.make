@@ -69,6 +69,7 @@ include CMakeFiles/CA3_CPP_FB.dir/progress.make
 include CMakeFiles/CA3_CPP_FB.dir/flags.make
 
 CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/flags.make
+CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/includes_CXX.rsp
 CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/main.cpp
 CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\fanfa\CLionProjects\CA3_CPP_FB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj"
@@ -83,6 +84,7 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.s: cmake_force
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fanfa\CLionProjects\CA3_CPP_FB\main.cpp -o CMakeFiles\CA3_CPP_FB.dir\main.cpp.s
 
 CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/flags.make
+CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/includes_CXX.rsp
 CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Crawler.cpp
 CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\fanfa\CLionProjects\CA3_CPP_FB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj"
@@ -97,6 +99,7 @@ CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.s: cmake_force
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fanfa\CLionProjects\CA3_CPP_FB\Crawler.cpp -o CMakeFiles\CA3_CPP_FB.dir\Crawler.cpp.s
 
 CMakeFiles/CA3_CPP_FB.dir/Board.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/flags.make
+CMakeFiles/CA3_CPP_FB.dir/Board.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/includes_CXX.rsp
 CMakeFiles/CA3_CPP_FB.dir/Board.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Board.cpp
 CMakeFiles/CA3_CPP_FB.dir/Board.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\fanfa\CLionProjects\CA3_CPP_FB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CA3_CPP_FB.dir/Board.cpp.obj"
@@ -111,6 +114,7 @@ CMakeFiles/CA3_CPP_FB.dir/Board.cpp.s: cmake_force
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fanfa\CLionProjects\CA3_CPP_FB\Board.cpp -o CMakeFiles\CA3_CPP_FB.dir\Board.cpp.s
 
 CMakeFiles/CA3_CPP_FB.dir/Bug.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/flags.make
+CMakeFiles/CA3_CPP_FB.dir/Bug.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/includes_CXX.rsp
 CMakeFiles/CA3_CPP_FB.dir/Bug.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Bug.cpp
 CMakeFiles/CA3_CPP_FB.dir/Bug.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\fanfa\CLionProjects\CA3_CPP_FB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CA3_CPP_FB.dir/Bug.cpp.obj"
@@ -125,6 +129,7 @@ CMakeFiles/CA3_CPP_FB.dir/Bug.cpp.s: cmake_force
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fanfa\CLionProjects\CA3_CPP_FB\Bug.cpp -o CMakeFiles\CA3_CPP_FB.dir\Bug.cpp.s
 
 CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/flags.make
+CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/includes_CXX.rsp
 CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Hopper.cpp
 CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\fanfa\CLionProjects\CA3_CPP_FB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj"
@@ -139,6 +144,7 @@ CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.s: cmake_force
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fanfa\CLionProjects\CA3_CPP_FB\Hopper.cpp -o CMakeFiles\CA3_CPP_FB.dir\Hopper.cpp.s
 
 CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/flags.make
+CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/includes_CXX.rsp
 CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj: C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Jumper.cpp
 CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj: CMakeFiles/CA3_CPP_FB.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\fanfa\CLionProjects\CA3_CPP_FB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj"
@@ -171,6 +177,12 @@ CA3_CPP_FB.exe: CMakeFiles/CA3_CPP_FB.dir/Bug.cpp.obj
 CA3_CPP_FB.exe: CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj
 CA3_CPP_FB.exe: CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj
 CA3_CPP_FB.exe: CMakeFiles/CA3_CPP_FB.dir/build.make
+CA3_CPP_FB.exe: C:/SFML-2.6.2/lib/libsfml-system-s-d.a
+CA3_CPP_FB.exe: C:/SFML-2.6.2/lib/libsfml-window-s-d.a
+CA3_CPP_FB.exe: C:/SFML-2.6.2/lib/libsfml-graphics-s-d.a
+CA3_CPP_FB.exe: C:/SFML-2.6.2/lib/libsfml-window-s-d.a
+CA3_CPP_FB.exe: C:/SFML-2.6.2/lib/libsfml-system-s-d.a
+CA3_CPP_FB.exe: C:/SFML-2.6.2/lib/libfreetype.a
 CA3_CPP_FB.exe: CMakeFiles/CA3_CPP_FB.dir/linkLibs.rsp
 CA3_CPP_FB.exe: CMakeFiles/CA3_CPP_FB.dir/objects1.rsp
 CA3_CPP_FB.exe: CMakeFiles/CA3_CPP_FB.dir/link.txt

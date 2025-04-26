@@ -15,3 +15,9 @@ add_executable(CA3_CPP_FB main.cpp
         Jumper.cpp
         Jumper.h)
 
+set(SFML_STATIC_LIBRARIES TRUE)
+set(SFML_DIR C:/SFML-2.6.2/lib/cmake/SFML)
+find_package(SFML COMPONENTS system window graphics network REQUIRED)
+
+include_directories(C:/SFML-2.6.2/include)
+target_link_libraries(CA3_CPP_FB sfml-system sfml-window sfml-graphics)

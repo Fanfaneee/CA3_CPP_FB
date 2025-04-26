@@ -143,6 +143,9 @@ bool Board::tapBugBoard() {
     updateCellOccupants();
     return checkLastBugStanding();
 }
+
+
+
 void Board::fight() {
     random_device rd;
     mt19937 gen(rd());
@@ -167,18 +170,27 @@ void Board::fight() {
             }
 
             int totalSizeEaten = 0;
+            vector<Bug*> toRemove;
+
             for (auto& bug : occupants) {
                 if (bug != strongest) {
                     bug->markAsDead();
                     deadBugs.push_back(bug);
                     totalSizeEaten += bug->getSize();
+                    toRemove.push_back(bug);
                 }
             }
 
             strongest->grow(totalSizeEaten);
+
+            // Retirer les insectes morts de la liste des occupants
+            for (auto& bug : toRemove) {
+                occupants.erase(remove(occupants.begin(), occupants.end(), bug), occupants.end());
+            }
         }
     }
 
+    // Mettre à jour la liste des bugs vivants
     bugs.erase(remove_if(bugs.begin(), bugs.end(),
                          [](Bug* bug) { return !bug->isAlive(); }),
                bugs.end());
@@ -278,4 +290,8 @@ void Board::simulateGame() {
     displayAllBugs();
     writeLifeHistoryToFile();
     cout << "Simulation complete. Results written to file." << endl;
+}
+
+std::vector<Bug*> Board::getBugs() const {
+    return bugs;
 }

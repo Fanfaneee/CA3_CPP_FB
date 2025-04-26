@@ -34,6 +34,7 @@ public:
     void displayAllCells() const;
     bool checkLastBugStanding() const;
     void simulateGame();
+    std::vector<Bug*> getBugs() const;
 };
 
 #endif // BOARD_H
