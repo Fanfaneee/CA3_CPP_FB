@@ -208,9 +208,14 @@ void Board::displayAllCells() const {
         for (int x = 0; x < width; ++x) {
             Position pos = {x, y};
             cout << "(" << x << "," << y << "): ";
-            if (cellOccupants.find(pos) != cellOccupants.end()) {
-                for (const auto& bug : cellOccupants.at(pos)) {
-                    cout << "Bug " << bug->getId() << ", ";
+            if (cellOccupants.find(pos) != cellOccupants.end() && !cellOccupants.at(pos).empty()) {
+                const auto& occupants = cellOccupants.at(pos);
+                for (size_t i = 0; i < occupants.size(); ++i) {
+                    cout << (dynamic_cast<Hopper*>(occupants[i]) ? "Hopper " : "Crawler ")
+                         << occupants[i]->getId();
+                    if (i < occupants.size() - 1) {
+                        cout << ", ";
+                    }
                 }
             } else {
                 cout << "empty";
