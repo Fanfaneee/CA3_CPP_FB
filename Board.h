@@ -6,13 +6,14 @@
 #include "Bug.h"
 #include "Crawler.h"
 #include "Hopper.h"
+#include "Jumper.h"
 
 class Board {
 private:
     int width;
     int height;
-    std::vector<Bug*> bugs; // Tous les bugs vivants
-    std::vector<Bug*> deadBugs; // Bugs morts
+    std::vector<Bug*> bugs;
+    std::vector<Bug*> deadBugs;
     std::map<Position, std::vector<Bug*>> cellOccupants;
 
     void updateCellOccupants();

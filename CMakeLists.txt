@@ -11,5 +11,7 @@ add_executable(CA3_CPP_FB main.cpp
         Bug.cpp
         Bug.h
         Hopper.cpp
-        Hopper.h)
+        Hopper.h
+        Jumper.cpp
+        Jumper.h)
 

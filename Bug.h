@@ -47,6 +47,7 @@ public:
     bool isWayBlocked(int boardWidth, int boardHeight) const;
 
     virtual void move(int boardWidth, int boardHeight) = 0;
+    void grow(int sizeIncrease);
 };
 
 #endif // BUG_H

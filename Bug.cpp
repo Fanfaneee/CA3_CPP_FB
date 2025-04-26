@@ -25,3 +25,6 @@ bool Bug::isWayBlocked(int boardWidth, int boardHeight) const {
     }
     return false;
 }
+void Bug::grow(int sizeIncrease) {
+    size += sizeIncrease;
+}

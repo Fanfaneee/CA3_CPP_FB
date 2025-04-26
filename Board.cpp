@@ -61,7 +61,13 @@ void Board::loadCrawlersFromFile(const string& filename) {
             hopLength = stoi(temp);
             addBug(new Hopper(id, x, y, static_cast<Direction>(dir), size, hopLength));
             cout << "Hopper loaded: ID=" << id << ", Position=(" << x << "," << y << "), Direction=" << dir << ", Size=" << size << ", Hop Length=" << hopLength << endl;
-        } else {
+        }else if (type == 'J') {
+            getline(ss, temp, ',');
+            int jumpRadius = stoi(temp);
+            addBug(new Jumper(id, x, y, static_cast<Direction>(dir), size, jumpRadius));
+            cout << "Jumper loaded: ID=" << id << ", Position=(" << x << "," << y << "), Direction=" << dir << ", Size=" << size << ", Jump Radius=" << jumpRadius << endl;
+        }
+        else {
             cerr << "Unknown type in line: " << line << endl;
         }
     }
@@ -75,7 +81,6 @@ void Board::moveBugs() {
     }
     updateCellOccupants();
 }
-
 void Board::displayAllBugs() const {
     if (bugs.empty()) {
         cout << "No bugs on the board.\n";
@@ -88,12 +93,23 @@ void Board::displayAllBugs() const {
          << setw(10) << "Position"
          << setw(10) << "Size"
          << setw(10) << "Direction"
-         << setw(10) << "HopLength"
+         << setw(15) << "Special"
          << setw(10) << "Status" << endl;
 
     for (const auto& bug : bugs) {
-        string type = dynamic_cast<Hopper*>(bug) ? "Hopper" : "Crawler";
-        int hopLength = dynamic_cast<Hopper*>(bug) ? dynamic_cast<Hopper*>(bug)->getHopLength() : 0;
+        string type;
+        string special;
+
+        if (auto* jumper = dynamic_cast<Jumper*>(bug)) {
+            type = "Jumper";
+            special = "Radius: " + to_string(jumper->getJumpRadius());
+        } else if (auto* hopper = dynamic_cast<Hopper*>(bug)) {
+            type = "Hopper";
+            special = "Hop: " + to_string(hopper->getHopLength());
+        } else {
+            type = "Crawler";
+            special = "-";
+        }
 
         cout << left
              << setw(5) << bug->getId()
@@ -103,7 +119,7 @@ void Board::displayAllBugs() const {
              << setw(10) << (bug->getDirection() == Direction::North ? "North" :
                              bug->getDirection() == Direction::East ? "East" :
                              bug->getDirection() == Direction::South ? "South" : "West")
-             << setw(10) << (type == "Hopper" ? to_string(hopLength) : "-")
+             << setw(15) << special
              << setw(10) << (bug->isAlive() ? "Alive" : "Dead") << endl;
     }
 }
@@ -127,22 +143,39 @@ bool Board::tapBugBoard() {
     updateCellOccupants();
     return checkLastBugStanding();
 }
-
 void Board::fight() {
+    random_device rd;
+    mt19937 gen(rd());
+
     for (auto& [pos, occupants] : cellOccupants) {
         if (occupants.size() > 1) {
             Bug* strongest = occupants[0];
-            for (auto& bug : occupants) {
-                if (bug->getSize() > strongest->getSize()) {
-                    strongest = bug;
+            vector<Bug*> contenders = {strongest};
+
+            for (size_t i = 1; i < occupants.size(); ++i) {
+                if (occupants[i]->getSize() > strongest->getSize()) {
+                    strongest = occupants[i];
+                    contenders = {strongest};
+                } else if (occupants[i]->getSize() == strongest->getSize()) {
+                    contenders.push_back(occupants[i]);
                 }
             }
+
+            if (contenders.size() > 1) {
+                uniform_int_distribution<> dist(0, contenders.size() - 1);
+                strongest = contenders[dist(gen)];
+            }
+
+            int totalSizeEaten = 0;
             for (auto& bug : occupants) {
                 if (bug != strongest) {
                     bug->markAsDead();
                     deadBugs.push_back(bug);
+                    totalSizeEaten += bug->getSize();
                 }
             }
+
+            strongest->grow(totalSizeEaten);
         }
     }
 
@@ -150,6 +183,7 @@ void Board::fight() {
                          [](Bug* bug) { return !bug->isAlive(); }),
                bugs.end());
 }
+
 
 void Board::displayLifeHistory() const {
     for (const auto& bug : bugs) {
@@ -202,7 +236,6 @@ void Board::updateCellOccupants() {
         cellOccupants[bug->getPosition()].push_back(bug);
     }
 }
-
 void Board::displayAllCells() const {
     for (int y = 0; y < height; ++y) {
         for (int x = 0; x < width; ++x) {
@@ -211,8 +244,16 @@ void Board::displayAllCells() const {
             if (cellOccupants.find(pos) != cellOccupants.end() && !cellOccupants.at(pos).empty()) {
                 const auto& occupants = cellOccupants.at(pos);
                 for (size_t i = 0; i < occupants.size(); ++i) {
-                    cout << (dynamic_cast<Hopper*>(occupants[i]) ? "Hopper " : "Crawler ")
-                         << occupants[i]->getId();
+                    string type;
+                    if (dynamic_cast<Jumper*>(occupants[i])) {
+                        type = "Jumper";
+                    } else if (dynamic_cast<Hopper*>(occupants[i])) {
+                        type = "Hopper";
+                    } else {
+                        type = "Crawler";
+                    }
+
+                    cout << type << " " << occupants[i]->getId();
                     if (i < occupants.size() - 1) {
                         cout << ", ";
                     }

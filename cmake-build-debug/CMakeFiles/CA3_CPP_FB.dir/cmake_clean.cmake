@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj.d"
   "CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj"
   "CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj.d"
+  "CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj"
+  "CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj.d"
   "CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj"
   "CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj.d"
   "libCA3_CPP_FB.dll.a"

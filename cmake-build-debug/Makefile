@@ -224,6 +224,30 @@ Hopper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CA3_CPP_FB.dir\build.make CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.s
 .PHONY : Hopper.cpp.s
 
+Jumper.obj: Jumper.cpp.obj
+.PHONY : Jumper.obj
+
+# target to build an object file
+Jumper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CA3_CPP_FB.dir\build.make CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj
+.PHONY : Jumper.cpp.obj
+
+Jumper.i: Jumper.cpp.i
+.PHONY : Jumper.i
+
+# target to preprocess a source file
+Jumper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CA3_CPP_FB.dir\build.make CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.i
+.PHONY : Jumper.cpp.i
+
+Jumper.s: Jumper.cpp.s
+.PHONY : Jumper.s
+
+# target to generate assembly for a file
+Jumper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CA3_CPP_FB.dir\build.make CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.s
+.PHONY : Jumper.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -269,6 +293,9 @@ help:
 	@echo ... Hopper.obj
 	@echo ... Hopper.i
 	@echo ... Hopper.s
+	@echo ... Jumper.obj
+	@echo ... Jumper.i
+	@echo ... Jumper.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
