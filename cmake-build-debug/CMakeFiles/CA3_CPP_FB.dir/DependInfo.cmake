@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Crawler.cpp" "CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj" "gcc" "CMakeFiles/CA3_CPP_FB.dir/Crawler.cpp.obj.d"
   "C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Hopper.cpp" "CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj" "gcc" "CMakeFiles/CA3_CPP_FB.dir/Hopper.cpp.obj.d"
   "C:/Users/fanfa/CLionProjects/CA3_CPP_FB/Jumper.cpp" "CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj" "gcc" "CMakeFiles/CA3_CPP_FB.dir/Jumper.cpp.obj.d"
+  "C:/Users/fanfa/CLionProjects/CA3_CPP_FB/SuperBug.cpp" "CMakeFiles/CA3_CPP_FB.dir/SuperBug.cpp.obj" "gcc" "CMakeFiles/CA3_CPP_FB.dir/SuperBug.cpp.obj.d"
   "C:/Users/fanfa/CLionProjects/CA3_CPP_FB/main.cpp" "CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj" "gcc" "CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj.d"
   )
 

@@ -171,6 +171,7 @@ CMakeFiles/CA3_CPP_FB.dir/Board.cpp.obj: \
  C:\Users\fanfa\CLionProjects\CA3_CPP_FB\Crawler.h \
  C:\Users\fanfa\CLionProjects\CA3_CPP_FB\Hopper.h \
  C:\Users\fanfa\CLionProjects\CA3_CPP_FB\Jumper.h \
+ C:\Users\fanfa\CLionProjects\CA3_CPP_FB\SuperBug.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \

@@ -13,7 +13,10 @@ add_executable(CA3_CPP_FB main.cpp
         Hopper.cpp
         Hopper.h
         Jumper.cpp
-        Jumper.h)
+        Jumper.h
+        SuperBug.cpp
+        SuperBug.h
+)
 
 set(SFML_STATIC_LIBRARIES TRUE)
 set(SFML_DIR C:/SFML-2.6.2/lib/cmake/SFML)

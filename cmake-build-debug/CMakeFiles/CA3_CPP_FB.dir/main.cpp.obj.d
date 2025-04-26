@@ -171,6 +171,7 @@ CMakeFiles/CA3_CPP_FB.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
  C:\Users\fanfa\CLionProjects\CA3_CPP_FB\Hopper.h \
  C:\Users\fanfa\CLionProjects\CA3_CPP_FB\Jumper.h \
+ C:\Users\fanfa\CLionProjects\CA3_CPP_FB\SuperBug.h \
  C:/SFML-2.6.2/include/SFML/Graphics.hpp \
  C:/SFML-2.6.2/include/SFML/Window.hpp \
  C:/SFML-2.6.2/include/SFML/System.hpp \

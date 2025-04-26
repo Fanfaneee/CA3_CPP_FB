@@ -48,6 +48,8 @@ public:
 
     virtual void move(int boardWidth, int boardHeight) = 0;
     void grow(int sizeIncrease);
+    void setDirection(Direction dir);
 };
+
 
 #endif // BUG_H

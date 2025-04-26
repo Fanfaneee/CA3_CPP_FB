@@ -28,3 +28,7 @@ bool Bug::isWayBlocked(int boardWidth, int boardHeight) const {
 void Bug::grow(int sizeIncrease) {
     size += sizeIncrease;
 }
+
+void Bug::setDirection(Direction dir) {
+    direction = dir;
+}

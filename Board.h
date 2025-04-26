@@ -7,6 +7,7 @@
 #include "Crawler.h"
 #include "Hopper.h"
 #include "Jumper.h"
+#include "SuperBug.h"
 
 class Board {
 private:
@@ -35,6 +36,8 @@ public:
     bool checkLastBugStanding() const;
     void simulateGame();
     std::vector<Bug*> getBugs() const;
+    SuperBug* getSuperBugById(int id) const;
+
 };
 
 #endif // BOARD_H
