@@ -153,14 +153,31 @@ void Board::fight() {
 
 void Board::displayLifeHistory() const {
     for (const auto& bug : bugs) {
-        cout << "Bug ID: " << bug->getId() << " Path: ";
+        cout << bug->getId() << " "
+             << (dynamic_cast<Hopper*>(bug) ? "Hopper" : "Crawler")
+             << " Path: ";
         for (const auto& pos : bug->getPath()) {
-            cout << "(" << pos.x << "," << pos.y << ") ";
+            cout << "(" << pos.x << "," << pos.y << ")";
+            if (&pos != &bug->getPath().back()) {
+                cout << ",";
+            }
         }
-        cout << endl;
+        cout << " Alive" << endl;
+    }
+
+    for (const auto& bug : deadBugs) {
+        cout << bug->getId() << " "
+             << (dynamic_cast<Hopper*>(bug) ? "Hopper" : "Crawler")
+             << " Path: ";
+        for (const auto& pos : bug->getPath()) {
+            cout << "(" << pos.x << "," << pos.y << ")";
+            if (&pos != &bug->getPath().back()) {
+                cout << ",";
+            }
+        }
+        cout << " Eaten by " << bug->getId() << endl;
     }
 }
-
 void Board::writeLifeHistoryToFile() const {
     ofstream file("bugs_life_history.txt");
     if (!file.is_open()) {
